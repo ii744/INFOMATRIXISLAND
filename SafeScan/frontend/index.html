@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SafeScan — AI-powered file and URL threat analyzer that explains security risks in plain human language">
+    <title>SafeScan — AI Threat Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-effects">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    <div class="bg-grid"></div>
+
+    <div class="app-container">
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+            </div>
+            <h1>SafeScan</h1>
+            <p class="tagline">AI-powered threat analysis explained in plain human language</p>
+        </header>
+
+        <!-- Tab Navigation -->
+        <nav class="tab-nav" id="tab-nav">
+            <button class="tab-btn active" data-tab="url" id="tab-url">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                </svg>
+                Scan URL
+            </button>
+            <button class="tab-btn" data-tab="file" id="tab-file">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="12" y1="18" x2="12" y2="12"/>
+                    <line x1="9" y1="15" x2="15" y2="15"/>
+                </svg>
+                Scan File
+            </button>
+        </nav>
+
+        <!-- URL Scan Panel -->
+        <div class="scan-panel active" id="panel-url">
+            <div class="glass-card">
+                <div class="input-group">
+                    <input
+                        type="url"
+                        class="url-input"
+                        id="url-input"
+                        placeholder="Paste a suspicious URL here — e.g. https://suspicious-site.com/login"
+                        autocomplete="off"
+                        spellcheck="false"
+                    >
+                    <button class="btn-primary" id="btn-scan-url">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                        Scan
+                    </button>
+                </div>
+                <div class="error-message" id="url-error"></div>
+            </div>
+        </div>
+
+        <!-- File Scan Panel -->
+        <div class="scan-panel" id="panel-file">
+            <div class="glass-card">
+                <div class="drop-zone" id="drop-zone">
+                    <div class="drop-zone-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="17 8 12 3 7 8"/>
+                            <line x1="12" y1="3" x2="12" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3>Drop a file here or click to browse</h3>
+                    <p>Maximum file size: 10 MB • File is analyzed statically, never executed</p>
+                    <input type="file" id="file-input">
+                </div>
+                <div class="file-selected" id="file-selected">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-blue); flex-shrink:0">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                    </svg>
+                    <span class="file-name" id="file-name"></span>
+                    <span class="file-size" id="file-size"></span>
+                </div>
+                <div class="file-actions" id="file-actions">
+                    <button class="btn-primary" id="btn-scan-file">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                        Analyze File
+                    </button>
+                </div>
+                <div class="error-message" id="file-error"></div>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading-overlay" id="loading-overlay">
+            <div class="glass-card" style="width:100%">
+                <div style="display:flex; flex-direction:column; align-items:center; padding:2rem 0;">
+                    <div class="loading-spinner"></div>
+                    <div class="loading-text" id="loading-text">Analyzing...</div>
+                    <div class="loading-step" id="loading-step">Checking threat intelligence databases</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Panel -->
+        <div class="results-panel" id="results-panel">
+
+            <!-- Threat Level Header with Confidence Ring -->
+            <div class="threat-header" id="threat-header">
+                <div class="confidence-ring" id="confidence-ring">
+                    <svg viewBox="0 0 72 72">
+                        <circle class="ring-bg" cx="36" cy="36" r="30"/>
+                        <circle class="ring-fill" cx="36" cy="36" r="30"
+                            stroke-dasharray="188.5"
+                            stroke-dashoffset="188.5"
+                            id="ring-fill"/>
+                    </svg>
+                    <div class="confidence-value" id="confidence-value">0%</div>
+                </div>
+                <div class="threat-info">
+                    <h2 id="threat-level-text">Safe</h2>
+                    <p class="summary" id="threat-summary">Analysis summary will appear here</p>
+                </div>
+            </div>
+
+            <!-- Human Review Warning -->
+            <div class="human-review-banner" id="human-review-banner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                    <line x1="12" y1="9" x2="12" y2="13"/>
+                    <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+                <div>
+                    <div class="review-text">⚠ Human Review Recommended</div>
+                    <div class="review-detail">AI confidence is low — a security professional should verify this assessment before you take action.</div>
+                </div>
+            </div>
+
+            <!-- Explanation Cards -->
+            <div class="glass-card" style="margin-bottom: 1rem;">
+                <!-- What It Does -->
+                <div class="explanation-section" id="section-what-it-does">
+                    <div class="section-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                        What it does
+                    </div>
+                    <ul class="section-content" id="what-it-does-list"></ul>
+                </div>
+
+                <!-- Who It Targets -->
+                <div class="explanation-section" id="section-who-targets">
+                    <div class="section-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        Who it targets
+                    </div>
+                    <div class="section-content" id="who-targets-text"></div>
+                </div>
+
+                <!-- What Would Happen -->
+                <div class="explanation-section" id="section-what-happens">
+                    <div class="section-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        What would happen if you opened it
+                    </div>
+                    <div class="section-content" id="what-happens-text"></div>
+                </div>
+
+                <!-- Recommendation -->
+                <div class="explanation-section" id="section-recommendation">
+                    <div class="section-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Recommendation
+                    </div>
+                    <div class="section-content" id="recommendation-text"></div>
+                </div>
+            </div>
+
+            <!-- Technical Details (Collapsible) -->
+            <div class="collapsible" id="technical-collapsible">
+                <button class="collapsible-toggle" id="btn-toggle-technical">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    Technical Details
+                </button>
+                <div class="collapsible-content" id="technical-content"></div>
+            </div>
+
+            <!-- Threat Intel Sources (Collapsible) -->
+            <div class="collapsible">
+                <button class="collapsible-toggle" id="btn-toggle-intel">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    Threat Intelligence Sources
+                </button>
+                <div class="collapsible-content" id="intel-content">
+                    <div class="intel-sources" id="intel-sources"></div>
+                </div>
+            </div>
+
+            <!-- AI Transparency Log (Collapsible) -->
+            <div class="collapsible transparency-log">
+                <button class="collapsible-toggle" id="btn-toggle-log">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    AI Transparency Log — What the AI checked
+                </button>
+                <div class="collapsible-content" id="log-content">
+                    <div class="log-entries" id="log-entries"></div>
+                </div>
+            </div>
+
+            <!-- Scan Another -->
+            <div class="scan-another">
+                <button class="btn-primary" id="btn-scan-another">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                    Scan Another
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            SafeScan v1.0 — AI explains, <strong>you</strong> decide. AI analysis is not a substitute for professional security review.
+        </footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
