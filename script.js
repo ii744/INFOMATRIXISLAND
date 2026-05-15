@@ -17,21 +17,9 @@ function triggerFileChoose() {
 
 let currentEncryptedBlob = null;
 
-
-function showScreen(screenId) {
-    const screens = ['main-screen', 'encrypt-screen', 'detect-screen', 'result-human', 'result-ai', 'result-encrypted'];
-    screens.forEach(id => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.style.display = (id === screenId) ? 'block' : 'none';
-        }
-    });
-}
-
-function triggerFileChoose() {
-    document.getElementById('file-chooser').click();
-}
-
+// ==========================================
+// 1: AI Detect
+// ==========================================
 async function handleDetect(inputElement) {
     const file = inputElement.files[0];
     if (!file) return;
@@ -44,42 +32,93 @@ async function handleDetect(inputElement) {
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         const arrayBuffer = await file.arrayBuffer();
         const audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
-
         const data = audioBuffer.getChannelData(0);
-        
+
         const sampleRate = audioBuffer.sampleRate;
-        const chunkSize = Math.floor(sampleRate * 0.5); 
-        let isAi = false;
+        
+        let maxAmplitude = 0;
+        for (let i = 0; i < data.length; i++) {
+            let absVal = Math.abs(data[i]);
+            if (absVal > maxAmplitude) maxAmplitude = absVal;
+        }
+        const silenceThreshold = maxAmplitude * 0.008; 
 
-        for (let i = 0; i < data.length; i += chunkSize) {
+        // 2. Аналіз блоками по 0.4 секунди
+        const windowSize = Math.floor(sampleRate * 0.4); 
+        
+        let totalSpeechBlocks = 0;
+        let aiSuspiciousBlocks = 0;
+        let isPoisoned = false;
+
+        console.log(`--- SCANNING INTEGRITY FOR: ${file.name} ---`);
+
+        for (let i = 0; i < data.length; i += windowSize) {
+            let end = Math.min(i + windowSize, data.length);
+            let chunkData = data.subarray(i, end);
+
+            if (chunkData.length < windowSize * 0.5) continue;
+
             let chunkCrossings = 0;
-            let end = Math.min(i + chunkSize, data.length);
+            let sumSquares = 0;
+            let exactSilenceSamples = 0;
 
-            for (let j = i; j < end - 1; j++) {
-                if ((data[j] > 0 && data[j + 1] <= 0) || (data[j] < 0 && data[j + 1] >= 0)) {
+            for (let j = 0; j < chunkData.length - 1; j++) {
+                sumSquares += chunkData[j] * chunkData[j];
+                if ((chunkData[j] > 0 && chunkData[j + 1] <= 0) || (chunkData[j] < 0 && chunkData[j + 1] >= 0)) {
                     chunkCrossings++;
+                }
+                if (Math.abs(chunkData[j]) < silenceThreshold) {
+                    exactSilenceSamples++;
                 }
             }
 
-            let chunkZcrRate = chunkCrossings * 2;
+            let rms = Math.sqrt(sumSquares / chunkData.length);
+            let zcrRate = chunkCrossings * (sampleRate / chunkData.length); 
+            let silencePercent = (exactSilenceSamples / chunkData.length) * 100;
 
+          
+            if (rms > silenceThreshold) {
+                totalSpeechBlocks++;
 
-            if (chunkZcrRate < 1000 || chunkZcrRate > 3500) {
-                isAi = true; // Викрили ШІ!
-                break;       // Зупиняємо перевірку, файл вже вважається фейком
+                if (zcrRate > 3800) {
+                    isPoisoned = true;
+                    console.log(`[ALERT] Data Poisoning detected at ${(i/sampleRate).toFixed(1)}s`);
+                    break; 
+                }
+
+                if (zcrRate < 320 || silencePercent > 40.0) {
+                    aiSuspiciousBlocks++;
+                    console.log(`[WARNING] Suspicious patterns at ${(i/sampleRate).toFixed(1)}s (ZCR: ${zcrRate.toFixed(0)}, Silence: ${silencePercent.toFixed(1)}%)`);
+                }
             }
         }
 
+     
+        let isAi = false;
+
+        if (isPoisoned) {
+            isAi = true;
+        } 
+        else if (totalSpeechBlocks > 0 && (aiSuspiciousBlocks / totalSpeechBlocks) > 0.25) {
+            isAi = true;
+            console.log(`Verdict: AI Generated (${((aiSuspiciousBlocks / totalSpeechBlocks) * 100).toFixed(1)}% suspicious elements)`);
+        } else {
+            console.log("Verdict: Authentic Human Voice");
+        }
+
+       
         if (isAi) {
             showScreen('result-ai');
         } else {
             showScreen('result-human');
         }
+
     } catch (e) {
-        alert("Помилка читання аудіо. Спробуйте інший файл.");
+        console.error(e);
+        alert("Помилка читання аудіо.");
     } finally {
         uploadText.innerText = originalText;
-        inputElement.value = ""; // Очищаємо інпут
+        inputElement.value = ""; 
     }
 }
 /// ==========================================
@@ -151,7 +190,7 @@ async function handleEncrypt(inputElement) {
         const source = offlineCtx.createBufferSource();
         source.buffer = originalBuffer;
 
-        // Створюємо шум
+
         const oscillator1 = offlineCtx.createOscillator();
         oscillator1.type = 'sine';
         oscillator1.frequency.value = 18500; 
@@ -180,8 +219,7 @@ async function handleEncrypt(inputElement) {
         const audioUrl = URL.createObjectURL(currentEncryptedBlob);
         const player = document.getElementById('encrypted-audio-player');
         player.src = audioUrl;
-        player.load(); // Примусово перезавантажуємо плеєр
-
+        player.load(); 
         showScreen('result-encrypted');
 
     } catch (e) {
@@ -209,7 +247,7 @@ async function simulateAIListening() {
     const source = audioCtx.createBufferSource();
     source.buffer = audioBuffer;
 
-    // Застосовуємо фільтри, які імітують "злам" парсера ШІ
+
     const distortion = audioCtx.createWaveShaper();
     function makeDistortionCurve(amount) {
         let k = typeof amount === 'number' ? amount : 50,
@@ -224,7 +262,6 @@ async function simulateAIListening() {
     }
     distortion.curve = makeDistortionCurve(400);
 
-    // Вирізаємо нормальний голос, залишаємо тільки отруту і спотворення
     const biquadFilter = audioCtx.createBiquadFilter();
     biquadFilter.type = "highpass";
     biquadFilter.frequency.value = 2000;
