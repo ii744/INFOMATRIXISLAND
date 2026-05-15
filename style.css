@@ -1,0 +1,167 @@
+body {
+    background-color: #1a2233; /* Темний фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background-color: #121826;
+    padding: 40px 60px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 400px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-family: 'Space Grotesk';
+}
+
+.tagline {
+    color: #f08a8a; /* Рожево-червоний колір тексту */
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Плавність анімації */
+    font-weight: 500;
+}
+
+/* Кнопка Encrypt */
+.btn-encrypt {
+    background-color: #9a8cff;
+    color: #ffffff;
+}
+
+.btn-encrypt:hover {
+    background-color: #b3a9ff;
+    box-shadow: 0 0 15px rgba(154, 140, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+.btn-encrypt:active {
+    transform: translateY(1px);
+    background-color: #7d6de6;
+}
+
+/* Кнопка AI Detect */
+.btn-ai {
+    background-color: #ff7e7e;
+    color: #ffffff;
+}
+
+.btn-ai:hover {
+    background-color: #ff9999;
+    box-shadow: 0 0 15px rgba(255, 126, 126, 0.6);
+    transform: translateY(-2px);
+}
+
+.btn-ai:active {
+    transform: translateY(1px);
+    background-color: #e66b6b;
+}
+/* Стилі для зони завантаження */
+.upload-box {
+    border: 1px solid #4a5568;
+    border-radius: 8px;
+    padding: 40px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.upload-box:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.upload-icon {
+    font-size: 40px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.instruction {
+    color: #f08a8a;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+/* Кнопки Main */
+.btn-main {
+    background-color: #9a8cff;
+    color: white;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.btn-main-alt {
+    background-color: #ff7e7e;
+    color: white;
+    width: 100px;
+    margin: 0 auto;
+}
+.result-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.status-icon {
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.error {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.status-text {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: left;
+}
