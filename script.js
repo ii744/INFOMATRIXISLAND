@@ -5,16 +5,33 @@
 
 const ALL_SCREENS = [
   'main-screen', 'encrypt-screen', 'detect-screen',
-  'scanning-screen', 'result-human', 'result-ai', 'result-encrypted'
+  'scanning-screen', 'result-human', 'result-ai', 'result-encrypted', 'result-error'
 ];
 
 let currentEncryptedBlobUrl = null;
+
+function showToast(message) {
+  const toast = document.getElementById('toast-container');
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.add('show');
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 4000);
+}
 
 function showScreen(screenId) {
   ALL_SCREENS.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.style.display = (id === screenId) ? 'block' : 'none';
   });
+
+  if (screenId === 'main-screen' && currentEncryptedBlobUrl) {
+    URL.revokeObjectURL(currentEncryptedBlobUrl);
+    currentEncryptedBlobUrl = null;
+    const player = document.getElementById('encrypted-audio-player');
+    if (player) player.src = '';
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -126,7 +143,7 @@ function runDetection(data, sampleRate) {
   }
 
   if (blocks.length < 5) {
-    return { verdict: 'HUMAN', score: 0, details: 'Audio too short for reliable analysis' };
+    return { verdict: 'ERROR', score: 0, details: 'Audio too short for reliable analysis' };
   }
 
   const sortedRms = blocks.map(b => b.rms).sort((a, b) => a - b);
@@ -135,7 +152,7 @@ function runDetection(data, sampleRate) {
   const speechBlocks = blocks.filter(b => b.rms > speechThreshold);
 
   if (speechBlocks.length < 3) {
-    return { verdict: 'HUMAN', score: 0, details: 'Insufficient speech content' };
+    return { verdict: 'ERROR', score: 0, details: 'Insufficient speech content' };
   }
 
   const speechRmsValues = speechBlocks.map(b => b.rms);
@@ -215,6 +232,13 @@ async function handleDetect(inputElement) {
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     const arrayBuffer = await file.arrayBuffer();
     const audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
+    
+    if (audioBuffer.duration < 2.0) {
+      showToast('Audio file is too short (minimum 2 seconds required).');
+      showScreen('detect-screen');
+      return;
+    }
+
     const data = audioBuffer.getChannelData(0);
     const sampleRate = audioBuffer.sampleRate;
 
@@ -224,7 +248,10 @@ async function handleDetect(inputElement) {
 
     const confidencePercent = Math.round(result.score * 100);
 
-    if (result.verdict === 'AI') {
+    if (result.verdict === 'ERROR') {
+      document.getElementById('error-details').textContent = result.details;
+      showScreen('result-error');
+    } else if (result.verdict === 'AI') {
       document.getElementById('ai-confidence-value').textContent = `${confidencePercent}%`;
       document.getElementById('ai-confidence-bar').style.width = `${confidencePercent}%`;
       document.getElementById('ai-details').textContent = result.details;
@@ -304,7 +331,9 @@ async function handleEncrypt(inputElement) {
 
   const uploadText = inputElement.previousElementSibling;
   const originalText = uploadText.innerText;
-  uploadText.innerText = 'Encrypting...';
+  uploadText.innerText = 'Processing...';
+  inputElement.parentElement.style.pointerEvents = 'none';
+  inputElement.parentElement.style.opacity = '0.5';
 
   let audioCtx = null;
   try {
@@ -360,6 +389,8 @@ async function handleEncrypt(inputElement) {
   } finally {
     if (audioCtx) audioCtx.close();
     uploadText.innerText = originalText;
+    inputElement.parentElement.style.pointerEvents = 'auto';
+    inputElement.parentElement.style.opacity = '1';
     inputElement.value = '';
   }
 }
@@ -391,7 +422,7 @@ async function simulateAIListening() {
       const deg = Math.PI / 180;
       for (let i = 0; i < samples; i++) {
         const x = i * 2 / samples - 1;
-        curve[i] = (3 + k) * x * 20 * deg / ( Math.PI + k * Math.abs(x) );
+        curve[i] = (3 + k) * x * 20 * deg / (Math.PI + k * Math.abs(x));
       }
       return curve;
     }
@@ -406,7 +437,7 @@ async function simulateAIListening() {
     biquadFilter.connect(distortion);
     distortion.connect(audioCtx.destination);
 
-    alert('SIMULATION START: Now you will hear how your voice sounds to AI.');
+    showToast('SIMULATION START: Now you will hear how your voice sounds to AI.');
     source.start(0);
 
     source.onended = () => {
