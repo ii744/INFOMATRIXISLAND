@@ -1,5 +1,5 @@
 function showScreen(screenId) {
-    const screens = ['main-screen', 'encrypt-screen', 'detect-screen', 'result-human', 'result-ai'];
+    const screens = ['main-screen', 'encrypt-screen', 'detect-screen', 'result-human', 'result-ai', 'result-encrypted'];
     screens.forEach(id => {
         const element = document.getElementById(id);
         if (element) {
