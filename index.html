@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AuraCast — AI voice detection and audio encryption tool. Protect your voice biometrics.">
+    <meta name="description"
+        content="AuraCast — AI voice detection and audio encryption tool. Protect your voice biometrics.">
     <title>AuraCast</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="icon1.png">
 </head>
+
 <body>
     <div id="main-screen" class="card">
         <h1>AuraCast</h1>
@@ -24,7 +27,8 @@
         <div class="upload-box" onclick="document.getElementById('encrypt-chooser').click()">
             <div class="upload-icon">↑</div>
             <p>Upload</p>
-            <input type="file" id="encrypt-chooser" accept="audio/*" style="display: none;" onchange="handleEncrypt(this)">
+            <input type="file" id="encrypt-chooser" accept="audio/*" style="display: none;"
+                onchange="handleEncrypt(this)">
         </div>
         <button class="btn btn-main-alt" onclick="showScreen('main-screen')">Main</button>
     </div>
@@ -81,6 +85,16 @@
         <button class="btn btn-main" onclick="showScreen('main-screen')">Main</button>
     </div>
 
+    <div id="result-error" class="card" style="display: none;">
+        <h1>AuraCast</h1>
+        <div class="result-content">
+            <div class="status-icon error">⚠</div>
+            <p class="status-text">Audio Analysis Error</p>
+        </div>
+        <p id="error-details" class="details-text" style="margin-bottom: 20px;"></p>
+        <button class="btn btn-main" onclick="showScreen('main-screen')">Main</button>
+    </div>
+
     <div id="result-encrypted" class="card" style="display: none;">
         <h1>AuraCast</h1>
         <p class="tagline">Encrypted version:</p>
@@ -93,6 +107,9 @@
         </div>
     </div>
 
+    <div id="toast-container" class="toast"></div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
