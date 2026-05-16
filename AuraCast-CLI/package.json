@@ -1,0 +1,12 @@
+{
+  "name": "auracast-analyzer",
+  "version": "1.0.0",
+  "description": "AuraCast Batch Audio Analyzer — scan audio files for AI-generated content",
+  "main": "analyzer.js",
+  "scripts": {
+    "analyze": "node analyzer.js",
+    "test": "node analyzer.js ../AuraCast-TestData"
+  },
+  "keywords": ["audio", "ai-detection", "voice", "auracast"],
+  "license": "MIT"
+}

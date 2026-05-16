@@ -1,0 +1,2181 @@
+{
+  "timestamp": "2026-05-16T07:48:09.954Z",
+  "basePath": "/Users/alex/Documents/programming/InfoMatrix Romania/AuraCast-TestData",
+  "totalFiles": 100,
+  "results": [
+    {
+      "file": "generated/ComfyUI_temp_btllb_00001_.flac",
+      "verdict": "HUMAN",
+      "score": 0.07056910722492396,
+      "duration": 22.133333333333333,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.493647120481231,
+        "zcrCV": 0.9060179813317456,
+        "crestCV": 0.2783350484457302,
+        "dynamics": 0.5532895036661267,
+        "centroidCV": 0.9335610917501467,
+        "flatnessMean": 0.03221181789406287,
+        "flatnessCV": 0.7378492415448396,
+        "hfMean": 0.07824145450992778
+      },
+      "scores": {
+        "lowFlatness": 0.07966234588391807,
+        "stableFlatness": 0,
+        "energyFlat": 0.1024597809432164
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_elxhb_00001_.flac",
+      "verdict": "HUMAN",
+      "score": 0.1546614224070394,
+      "duration": 94.4,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.45498538956292767,
+        "zcrCV": 0.5509401474472161,
+        "crestCV": 0.37051600891780156,
+        "dynamics": 0.5780060742733283,
+        "centroidCV": 0.7106107108576604,
+        "flatnessMean": 0.027801531011831825,
+        "flatnessCV": 0.7104520855875442,
+        "hfMean": 0.08808275530190202
+      },
+      "scores": {
+        "lowFlatness": 0.20567054251909078,
+        "stableFlatness": 0,
+        "energyFlat": 0.17275383715831338
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_fetbi_00001_.flac",
+      "verdict": "HUMAN",
+      "score": 0.16637280001097704,
+      "duration": 25.066666666666666,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.47153924533324887,
+        "zcrCV": 0.7510580373670847,
+        "crestCV": 0.26658785625729364,
+        "dynamics": 0.5627075620089136,
+        "centroidCV": 1.0061851090717033,
+        "flatnessMean": 0.026349678268325745,
+        "flatnessCV": 0.8892912522082476,
+        "hfMean": 0.06813256250407738
+      },
+      "scores": {
+        "lowFlatness": 0.24715204947640734,
+        "stableFlatness": 0,
+        "energyFlat": 0.14265591757591123
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_gzxya_00001_.flac",
+      "verdict": "HUMAN",
+      "score": 0.17944521379120953,
+      "duration": 46.53333333333333,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4276253282599809,
+        "zcrCV": 0.926253207520723,
+        "crestCV": 0.3733458989108411,
+        "dynamics": 0.45432213557875994,
+        "centroidCV": 1.0389009031025258,
+        "flatnessMean": 0.02711132250105243,
+        "flatnessCV": 0.8703097180690689,
+        "hfMean": 0.053143304090303135
+      },
+      "scores": {
+        "lowFlatness": 0.22539078568421644,
+        "stableFlatness": 0,
+        "energyFlat": 0.22249940316367112
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_jxwxd_00001_.flac",
+      "verdict": "AI",
+      "score": 0.30223672068073937,
+      "duration": 20.8,
+      "details": "low spectral flatness",
+      "features": {
+        "energyCV": 0.44902180904552996,
+        "zcrCV": 0.7773343640854382,
+        "crestCV": 0.26356676673767354,
+        "dynamics": 0.48490323685554076,
+        "centroidCV": 0.8766889184348672,
+        "flatnessMean": 0.017726123505628424,
+        "flatnessCV": 0.6986418487036158,
+        "hfMean": 0.02216359402059708
+      },
+      "scores": {
+        "lowFlatness": 0.49353932841061654,
+        "stableFlatness": 0.001940216137691686,
+        "energyFlat": 0.18359671082630924
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_kcheg_00001_.flac",
+      "verdict": "AI",
+      "score": 0.7060053407013271,
+      "duration": 80.8,
+      "details": "low spectral flatness, uniform spectral profile, flat energy",
+      "features": {
+        "energyCV": 0.08603124809931978,
+        "zcrCV": 0.4562433618019049,
+        "crestCV": 0.17936679106044306,
+        "dynamics": 0.224170460887949,
+        "centroidCV": 0.22964953047243947,
+        "flatnessMean": 0.011946531626504749,
+        "flatnessCV": 0.2674132525759615,
+        "hfMean": 0.0017371221938678435
+      },
+      "scores": {
+        "lowFlatness": 0.6586705249570073,
+        "stableFlatness": 0.6179810677486264,
+        "energyFlat": 0.8435795489103277
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_lsxzx_00001_.flac",
+      "verdict": "AI",
+      "score": 0.43580763280255974,
+      "duration": 77.06666666666666,
+      "details": "low spectral flatness, uniform spectral profile, flat energy",
+      "features": {
+        "energyCV": 0.28632435499698555,
+        "zcrCV": 0.5716999203321602,
+        "crestCV": 0.28434792237919404,
+        "dynamics": 0.3832491899603705,
+        "centroidCV": 0.49341890051437887,
+        "flatnessMean": 0.02030484667424183,
+        "flatnessCV": 0.41281172830288604,
+        "hfMean": 0.014973828881438209
+      },
+      "scores": {
+        "lowFlatness": 0.4198615235930906,
+        "stableFlatness": 0.4102689595673056,
+        "energyFlat": 0.47941026364184447
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_omsbi_00001_.flac",
+      "verdict": "AI",
+      "score": 0.5608344504897111,
+      "duration": 106.53333333333333,
+      "details": "low spectral flatness, uniform spectral profile, flat energy",
+      "features": {
+        "energyCV": 0.18932980958243134,
+        "zcrCV": 0.5772372932182527,
+        "crestCV": 0.23605550905374453,
+        "dynamics": 0.37011471802045715,
+        "centroidCV": 0.34966326996071395,
+        "flatnessMean": 0.017271166202614853,
+        "flatnessCV": 0.31207329486153573,
+        "hfMean": 0.003893575587336057
+      },
+      "scores": {
+        "lowFlatness": 0.5065381084967185,
+        "stableFlatness": 0.5541810073406632,
+        "energyFlat": 0.6557639825773975
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_oqkgx_00001_ (1).flac",
+      "verdict": "AI",
+      "score": 0.30739179855970766,
+      "duration": 86.53333333333333,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.3098541458291459,
+        "zcrCV": 0.6028114937816818,
+        "crestCV": 0.36807527700754367,
+        "dynamics": 0.40841154459042606,
+        "centroidCV": 0.6628125377340678,
+        "flatnessMean": 0.02535197651132723,
+        "flatnessCV": 0.5649901465281104,
+        "hfMean": 0.05305669502057825
+      },
+      "scores": {
+        "lowFlatness": 0.2756578139620792,
+        "stableFlatness": 0.1928712192455565,
+        "energyFlat": 0.43662882576518935
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_oqkgx_00001_.flac",
+      "verdict": "AI",
+      "score": 0.30739179855970766,
+      "duration": 86.53333333333333,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.3098541458291459,
+        "zcrCV": 0.6028114937816818,
+        "crestCV": 0.36807527700754367,
+        "dynamics": 0.40841154459042606,
+        "centroidCV": 0.6628125377340678,
+        "flatnessMean": 0.02535197651132723,
+        "flatnessCV": 0.5649901465281104,
+        "hfMean": 0.05305669502057825
+      },
+      "scores": {
+        "lowFlatness": 0.2756578139620792,
+        "stableFlatness": 0.1928712192455565,
+        "energyFlat": 0.43662882576518935
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_orydv_00001_.flac",
+      "verdict": "AI",
+      "score": 0.5100169134415595,
+      "duration": 141.06666666666666,
+      "details": "low spectral flatness, uniform spectral profile, flat energy",
+      "features": {
+        "energyCV": 0.25419535984580005,
+        "zcrCV": 0.6844426314217036,
+        "crestCV": 0.23920323008709432,
+        "dynamics": 0.35782973212441316,
+        "centroidCV": 0.42924270124502656,
+        "flatnessMean": 0.017038690029120507,
+        "flatnessCV": 0.3777242508838072,
+        "hfMean": 0.003722535839725642
+      },
+      "scores": {
+        "lowFlatness": 0.5131802848822713,
+        "stableFlatness": 0.4603939273088469,
+        "energyFlat": 0.5378266184621818
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_pebyj_00001_.flac",
+      "verdict": "AI",
+      "score": 0.5617940629137996,
+      "duration": 24.133333333333333,
+      "details": "low spectral flatness, uniform spectral profile, flat energy",
+      "features": {
+        "energyCV": 0.22075666852979808,
+        "zcrCV": 0.6847509161012747,
+        "crestCV": 0.20296334693819568,
+        "dynamics": 0.35984850562262577,
+        "centroidCV": 0.40303189039160103,
+        "flatnessMean": 0.013953026012951942,
+        "flatnessCV": 0.4146249301426713,
+        "hfMean": 0.0013940079479901628
+      },
+      "scores": {
+        "lowFlatness": 0.6013421139156588,
+        "stableFlatness": 0.4076786712247552,
+        "energyFlat": 0.5986242390367308
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_uxqry_00001_.flac",
+      "verdict": "HUMAN",
+      "score": 0.16721562600623216,
+      "duration": 11.733333333333333,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.49056188938492534,
+        "zcrCV": 0.6251840279531452,
+        "crestCV": 0.31163679683022416,
+        "dynamics": 0.515269569959694,
+        "centroidCV": 0.8077142381193931,
+        "flatnessMean": 0.025564361312139332,
+        "flatnessCV": 0.784448400176004,
+        "hfMean": 0.056321024329291265
+      },
+      "scores": {
+        "lowFlatness": 0.2695896767960192,
+        "stableFlatness": 0,
+        "energyFlat": 0.10806929202740856
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_wgjqa_00001_ (1).flac",
+      "verdict": "AI",
+      "score": 0.4981688090096047,
+      "duration": 79.73333333333333,
+      "details": "low spectral flatness, uniform spectral profile, flat energy",
+      "features": {
+        "energyCV": 0.22390818081175415,
+        "zcrCV": 0.6016222972212373,
+        "crestCV": 0.26182461937109813,
+        "dynamics": 0.4019292063069132,
+        "centroidCV": 0.42161560335330445,
+        "flatnessMean": 0.01884223585837931,
+        "flatnessCV": 0.38683630308861483,
+        "hfMean": 0.007791587437032014
+      },
+      "scores": {
+        "lowFlatness": 0.4616504040463054,
+        "stableFlatness": 0.4473767098734074,
+        "energyFlat": 0.5928942167059016
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_wgjqa_00001_.flac",
+      "verdict": "AI",
+      "score": 0.4981688090096047,
+      "duration": 79.73333333333333,
+      "details": "low spectral flatness, uniform spectral profile, flat energy",
+      "features": {
+        "energyCV": 0.22390818081175415,
+        "zcrCV": 0.6016222972212373,
+        "crestCV": 0.26182461937109813,
+        "dynamics": 0.4019292063069132,
+        "centroidCV": 0.42161560335330445,
+        "flatnessMean": 0.01884223585837931,
+        "flatnessCV": 0.38683630308861483,
+        "hfMean": 0.007791587437032014
+      },
+      "scores": {
+        "lowFlatness": 0.4616504040463054,
+        "stableFlatness": 0.4473767098734074,
+        "energyFlat": 0.5928942167059016
+      }
+    },
+    {
+      "file": "generated/ComfyUI_temp_zqtjb_00001_.flac",
+      "verdict": "AI",
+      "score": 0.6191378782780972,
+      "duration": 332.53333333333336,
+      "details": "low spectral flatness, uniform spectral profile, flat energy",
+      "features": {
+        "energyCV": 0.2455812121695694,
+        "zcrCV": 0.7428192899936416,
+        "crestCV": 0.1858596857027587,
+        "dynamics": 0.2733809730227115,
+        "centroidCV": 0.3426821463313531,
+        "flatnessMean": 0.011052992367033714,
+        "flatnessCV": 0.3115309480785233,
+        "hfMean": 0.0008606874058224933
+      },
+      "scores": {
+        "lowFlatness": 0.6842002180847511,
+        "stableFlatness": 0.5549557884592524,
+        "energyFlat": 0.5534887051462375
+      }
+    },
+    {
+      "file": "generated/audio (1) 2.wav",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 6.309166666666667,
+      "details": "Insufficient speech content detected",
+      "features": {},
+      "scores": {}
+    },
+    {
+      "file": "generated/audio (1).wav",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 6.309166666666667,
+      "details": "Insufficient speech content detected",
+      "features": {},
+      "scores": {}
+    },
+    {
+      "file": "generated/audio_2026-04-01_19-18-00_output (2).wav",
+      "verdict": "HUMAN",
+      "score": 0.05405913905437428,
+      "duration": 134.6,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.45089157840031385,
+        "zcrCV": 0.6202955725726649,
+        "crestCV": 0.33530578676820905,
+        "dynamics": 0.4398990383041333,
+        "centroidCV": 0.9137460385927374,
+        "flatnessMean": 0.1421419957379251,
+        "flatnessCV": 1.0438285991392553,
+        "hfMean": 0.07709266113171306
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.1801971301812476
+      }
+    },
+    {
+      "file": "generated/output.wav",
+      "verdict": "HUMAN",
+      "score": 0.2497514605870791,
+      "duration": 94.93333333333334,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.23526647377697443,
+        "zcrCV": 0.7288746128875903,
+        "crestCV": 0.18957850994358866,
+        "dynamics": 0.3767989757112783,
+        "centroidCV": 0.3810964795451306,
+        "flatnessMean": 0.04311409596680277,
+        "flatnessCV": 0.4267248016437265,
+        "hfMean": 0.0017858652695129673
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.3903931405089621,
+        "energyFlat": 0.5722427749509555
+      }
+    },
+    {
+      "file": "real/123.wav",
+      "verdict": "HUMAN",
+      "score": 0.2350937852051737,
+      "duration": 30.148820861678004,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.2579270619699718,
+        "zcrCV": 0.7268722421842808,
+        "crestCV": 0.2052137262852833,
+        "dynamics": 0.32885400829344547,
+        "centroidCV": 0.37770302959234753,
+        "flatnessMean": 0.03938312364101441,
+        "flatnessCV": 0.43476554256649147,
+        "hfMean": 0.0017000835431941412
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.378906367762155,
+        "energyFlat": 0.5310417055091423
+      }
+    },
+    {
+      "file": "real/2026-04-02 17-00-51.mp3",
+      "verdict": "HUMAN",
+      "score": 0.12189181554604983,
+      "duration": 224.55333333333334,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.46563459806717045,
+        "zcrCV": 0.8939400195791506,
+        "crestCV": 0.3287031805409901,
+        "dynamics": 0.46057431592983283,
+        "centroidCV": 0.9309653956688536,
+        "flatnessMean": 0.030373755296882396,
+        "flatnessCV": 0.6657521026164713,
+        "hfMean": 0.08186601590937202
+      },
+      "scores": {
+        "lowFlatness": 0.13217842008907443,
+        "stableFlatness": 0.04892556769075518,
+        "energyFlat": 0.15339163987787197
+      }
+    },
+    {
+      "file": "real/audio [vocals] (1).wav",
+      "verdict": "HUMAN",
+      "score": 0.0610391791553319,
+      "duration": 262.02666666666664,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4380948382152249,
+        "zcrCV": 0.3755112752599282,
+        "crestCV": 0.4342606790473334,
+        "dynamics": 0.19381129950230355,
+        "centroidCV": 0.4570661321888058,
+        "flatnessMean": 0.10404471397777178,
+        "flatnessCV": 0.7084454737661602,
+        "hfMean": 0.03684978027945045
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.203463930517773
+      }
+    },
+    {
+      "file": "real/audio [vocals].wav",
+      "verdict": "HUMAN",
+      "score": 0.07067117809198267,
+      "duration": 288.9926530612245,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5935790482031035,
+        "zcrCV": 0.6458227005418585,
+        "crestCV": 0.3921182981189755,
+        "dynamics": 0.34389113865940907,
+        "centroidCV": 0.521046114054765,
+        "flatnessMean": 0.14816697350980604,
+        "flatnessCV": 0.45265087667806064,
+        "hfMean": 0.05125694870437698
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.35335589045991334,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_10@05-08-2025_21-04-01.ogg",
+      "verdict": "HUMAN",
+      "score": 0.0973842909256633,
+      "duration": 9.593514739229025,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5012668109936872,
+        "zcrCV": 0.6689501522148329,
+        "crestCV": 0.4049054494429925,
+        "dynamics": 0.46383683530034076,
+        "centroidCV": 0.7885392809860088,
+        "flatnessMean": 0.0339116195999735,
+        "flatnessCV": 0.5066100898644647,
+        "hfMean": 0.027100065631232233
+      },
+      "scores": {
+        "lowFlatness": 0.03109658285790018,
+        "stableFlatness": 0.2762713001936219,
+        "energyFlat": 0.08860579819329606
+      }
+    },
+    {
+      "file": "real/audio_11@05-08-2025_21-07-28.ogg",
+      "verdict": "HUMAN",
+      "score": 0.27011420230205446,
+      "duration": 61.63351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.3671736002450619,
+        "zcrCV": 0.7133798979699635,
+        "crestCV": 0.22111710343097113,
+        "dynamics": 0.4235958762622355,
+        "centroidCV": 0.5186977801948822,
+        "flatnessMean": 0.02809019141268497,
+        "flatnessCV": 0.4491229390225337,
+        "hfMean": 0.003986417711839879
+      },
+      "scores": {
+        "lowFlatness": 0.19742310249471517,
+        "stableFlatness": 0.3583958013963804,
+        "energyFlat": 0.3324116359180693
+      }
+    },
+    {
+      "file": "real/audio_12@31-08-2025_22-31-16.ogg",
+      "verdict": "HUMAN",
+      "score": 0.29445021452076403,
+      "duration": 25.253514739229026,
+      "details": "uniform spectral profile, flat energy",
+      "features": {
+        "energyCV": 0.21404825644097253,
+        "zcrCV": 0.7101952212659542,
+        "crestCV": 0.2048434139872074,
+        "dynamics": 0.37101051578256816,
+        "centroidCV": 0.4528140358323771,
+        "flatnessMean": 0.03877826491395888,
+        "flatnessCV": 0.31078666869910576,
+        "hfMean": 0.0034797776148681957
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.5560190447155632,
+        "energyFlat": 0.6108213519255046
+      }
+    },
+    {
+      "file": "real/audio_13@02-09-2025_11-17-56.ogg",
+      "verdict": "HUMAN",
+      "score": 0.13265685740886426,
+      "duration": 23.333514739229024,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.3067957614170822,
+        "zcrCV": 0.6494061165072831,
+        "crestCV": 0.23707040047838748,
+        "dynamics": 0.31118197755372756,
+        "centroidCV": 1.0553507687585377,
+        "flatnessMean": 0.04099634495030475,
+        "flatnessCV": 1.088679176841345,
+        "hfMean": 0.005555208859182082
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.4421895246962142
+      }
+    },
+    {
+      "file": "real/audio_14@09-09-2025_17-58-58.ogg",
+      "verdict": "HUMAN",
+      "score": 0.04833441740336886,
+      "duration": 454.45351473922904,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5223874734195757,
+        "zcrCV": 0.6940861302983337,
+        "crestCV": 0.29292479146782374,
+        "dynamics": 0.503468415543175,
+        "centroidCV": 0.7577147117202082,
+        "flatnessMean": 0.03558422117923224,
+        "flatnessCV": 0.5835443625599281,
+        "hfMean": 0.048166488757341204
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.16636519634295976,
+        "energyFlat": 0.05020459378258968
+      }
+    },
+    {
+      "file": "real/audio_15@22-09-2025_20-05-44.ogg",
+      "verdict": "HUMAN",
+      "score": 0.14184129617242022,
+      "duration": 98.33351473922903,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.28995762368389627,
+        "zcrCV": 0.6657160020543251,
+        "crestCV": 0.21417637193747932,
+        "dynamics": 0.40631953301324036,
+        "centroidCV": 0.45939673199584163,
+        "flatnessMean": 0.03546504681304922,
+        "flatnessCV": 0.814579007753213,
+        "hfMean": 0.0007174713043151565
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.4728043205747341
+      }
+    },
+    {
+      "file": "real/audio_16@29-09-2025_09-34-10.ogg",
+      "verdict": "HUMAN",
+      "score": 0.11149577671649404,
+      "duration": 241.87351473922902,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.36180021658112954,
+        "zcrCV": 0.711882288522238,
+        "crestCV": 0.2358778683063647,
+        "dynamics": 0.4271907671494475,
+        "centroidCV": 0.5338177999693503,
+        "flatnessMean": 0.06675251858394352,
+        "flatnessCV": 0.6690552771101145,
+        "hfMean": 0.0074811367476452
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.044206746985550716,
+        "energyFlat": 0.3421814243979463
+      }
+    },
+    {
+      "file": "real/audio_17@12-10-2025_15-30-42.ogg",
+      "verdict": "HUMAN",
+      "score": 0.04702817069804044,
+      "duration": 146.79351473922904,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4637816870535926,
+        "zcrCV": 0.6244281041554063,
+        "crestCV": 0.2728297417095048,
+        "dynamics": 0.4528027629316363,
+        "centroidCV": 0.6367045184809731,
+        "flatnessMean": 0.0583145487043337,
+        "flatnessCV": 0.8219777110898338,
+        "hfMean": 0.01300765201329824
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.15676056899346813
+      }
+    },
+    {
+      "file": "real/audio_18@12-10-2025_15-33-16.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 79.03351473922902,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5505449499265362,
+        "zcrCV": 0.7574551882223276,
+        "crestCV": 0.24570187352384704,
+        "dynamics": 0.4179322731713538,
+        "centroidCV": 0.8517257206855672,
+        "flatnessMean": 0.07594385522767808,
+        "flatnessCV": 0.9991462648776571,
+        "hfMean": 0.038754323945248775
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_19@12-10-2025_15-38-32.ogg",
+      "verdict": "HUMAN",
+      "score": 0.02545729784088959,
+      "duration": 87.63351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5033282872917024,
+        "zcrCV": 0.652605115708977,
+        "crestCV": 0.2471808668864825,
+        "dynamics": 0.43198263493035455,
+        "centroidCV": 0.7935369085226248,
+        "flatnessMean": 0.06602679494915147,
+        "flatnessCV": 0.9438455960228136,
+        "hfMean": 0.019938526536472358
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.08485765946963197
+      }
+    },
+    {
+      "file": "real/audio_1@19-03-2024_15-25-38.ogg",
+      "verdict": "HUMAN",
+      "score": 0.05420552386141475,
+      "duration": 4.233514739229025,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.8622386953483461,
+        "zcrCV": 0.6086471078033688,
+        "crestCV": 0.19924918699620006,
+        "dynamics": 0.5656974789535316,
+        "centroidCV": 0.5141977161569485,
+        "flatnessMean": 0.21386145001220022,
+        "flatnessCV": 0.5102806664850483,
+        "hfMean": 0.26592606618942044
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.27102761930707375,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_2026-03-09_22-47-23.ogg",
+      "verdict": "HUMAN",
+      "score": 0.01618776315503423,
+      "duration": 232.99351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5203224342157706,
+        "zcrCV": 0.8703163372453808,
+        "crestCV": 0.2853599003851319,
+        "dynamics": 0.4355774612728451,
+        "centroidCV": 0.946239324731171,
+        "flatnessMean": 0.08507623559485643,
+        "flatnessCV": 0.9904069600429632,
+        "hfMean": 0.023334497015959358
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.053959210516780765
+      }
+    },
+    {
+      "file": "real/audio_2026-03-22_12-35-09.wav",
+      "verdict": "AI",
+      "score": 0.347435168681939,
+      "duration": 8.690458333333334,
+      "details": "uniform spectral profile, flat energy",
+      "features": {
+        "energyCV": 0.06609574680764924,
+        "zcrCV": 0.6023682678075626,
+        "crestCV": 0.12687516794052817,
+        "dynamics": 0.25866032840986597,
+        "centroidCV": 0.4322277879864307,
+        "flatnessMean": 0.03934335314126264,
+        "flatnessCV": 0.40779412025315565,
+        "hfMean": 0.0009746032448135261
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.41743697106692046,
+        "energyFlat": 0.8798259148951832
+      }
+    },
+    {
+      "file": "real/audio_2026-04-16_19-43-47.ogg",
+      "verdict": "HUMAN",
+      "score": 0.003316938137153414,
+      "duration": 53.99351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.650716514773728,
+        "zcrCV": 0.7589893808897,
+        "crestCV": 0.30197999887923693,
+        "dynamics": 0.48088345104321384,
+        "centroidCV": 0.8323966777703096,
+        "flatnessMean": 0.038379371689675555,
+        "flatnessCV": 0.688390716519963,
+        "hfMean": 0.02887029539493626
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.016584690685767067,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_20@12-10-2025_15-49-07.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 36.653514739229024,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5579097259435698,
+        "zcrCV": 1.1305577503397262,
+        "crestCV": 0.36528512265152646,
+        "dynamics": 0.4961244601601859,
+        "centroidCV": 1.1219190870065638,
+        "flatnessMean": 0.09611250119374438,
+        "flatnessCV": 1.2495949485774687,
+        "hfMean": 0.06290085629959614
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_21@16-10-2025_11-12-05.ogg",
+      "verdict": "HUMAN",
+      "score": 0.014257271326769027,
+      "duration": 127.19351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5238616692342568,
+        "zcrCV": 0.7296872465926689,
+        "crestCV": 0.26463845354461923,
+        "dynamics": 0.434517854690229,
+        "centroidCV": 0.7511956721783282,
+        "flatnessMean": 0.08367803044036974,
+        "flatnessCV": 0.885977741038718,
+        "hfMean": 0.03795670866527015
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.04752423775589676
+      }
+    },
+    {
+      "file": "real/audio_22@16-10-2025_20-12-51.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 41.09351473922902,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5943850613441987,
+        "zcrCV": 0.7979812321677661,
+        "crestCV": 0.28657368538136113,
+        "dynamics": 0.4002858678000952,
+        "centroidCV": 0.8769584093532827,
+        "flatnessMean": 0.09487168549691544,
+        "flatnessCV": 0.8815608243741164,
+        "hfMean": 0.0797721548196418
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_23@16-10-2025_20-13-18.ogg",
+      "verdict": "HUMAN",
+      "score": 0.03806235768824747,
+      "duration": 14.873514739229025,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4802190109048797,
+        "zcrCV": 1.0510214548683359,
+        "crestCV": 0.1748169158229019,
+        "dynamics": 0.39132569439140463,
+        "centroidCV": 0.8359299254324406,
+        "flatnessMean": 0.049029556490174216,
+        "flatnessCV": 0.8091226059334121,
+        "hfMean": 0.016969045532631562
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.12687452562749157
+      }
+    },
+    {
+      "file": "real/audio_24@16-10-2025_20-23-44.ogg",
+      "verdict": "HUMAN",
+      "score": 0.10992954493410402,
+      "duration": 152.11351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.34846250095414266,
+        "zcrCV": 0.6840673610143941,
+        "crestCV": 0.25549082853234045,
+        "dynamics": 0.37992223926944096,
+        "centroidCV": 0.6115970287177912,
+        "flatnessMean": 0.05788083641455413,
+        "flatnessCV": 0.7570823861126096,
+        "hfMean": 0.006315954569995863
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.3664318164470134
+      }
+    },
+    {
+      "file": "real/audio_25@23-10-2025_11-50-04.ogg",
+      "verdict": "HUMAN",
+      "score": 0.05168429810076317,
+      "duration": 155.51351473922904,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.45524545348193424,
+        "zcrCV": 0.6975567390008576,
+        "crestCV": 0.2765296769846473,
+        "dynamics": 0.46937456815097056,
+        "centroidCV": 0.6564669424193821,
+        "flatnessMean": 0.06108106767248648,
+        "flatnessCV": 0.8965928783485536,
+        "hfMean": 0.014900298590671886
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.17228099366921057
+      }
+    },
+    {
+      "file": "real/audio_26@03-11-2025_19-43-59.ogg",
+      "verdict": "HUMAN",
+      "score": 0.020297583835975873,
+      "duration": 16.733514739229026,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5127877629673776,
+        "zcrCV": 0.7751929777248807,
+        "crestCV": 0.20998781659007792,
+        "dynamics": 0.5327464598028782,
+        "centroidCV": 1.0099149696772276,
+        "flatnessMean": 0.07615932132669467,
+        "flatnessCV": 0.9885216951625518,
+        "hfMean": 0.04110525569857297
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.06765861278658625
+      }
+    },
+    {
+      "file": "real/audio_27@03-11-2025_19-47-23.ogg",
+      "verdict": "HUMAN",
+      "score": 0.0782822554742041,
+      "duration": 13.313514739229024,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4064825316306258,
+        "zcrCV": 0.582055922131065,
+        "crestCV": 0.2631733153931716,
+        "dynamics": 0.4850279692662587,
+        "centroidCV": 1.0517747688404406,
+        "flatnessMean": 0.05708676410874959,
+        "flatnessCV": 1.2629962427670625,
+        "hfMean": 0.017839586968716795
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.26094085158068037
+      }
+    },
+    {
+      "file": "real/audio_28@09-11-2025_18-38-20.ogg",
+      "verdict": "HUMAN",
+      "score": 0.11944440872780532,
+      "duration": 200.89351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.3310185839990236,
+        "zcrCV": 0.7411466709652287,
+        "crestCV": 0.36116840083452867,
+        "dynamics": 0.4236349787606386,
+        "centroidCV": 0.8595610323956105,
+        "flatnessMean": 0.0586579703868344,
+        "flatnessCV": 0.7998473227177403,
+        "hfMean": 0.04825674866510989
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.39814802909268443
+      }
+    },
+    {
+      "file": "real/audio_29@10-11-2025_17-46-45.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 18.173514739229024,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5837202294703824,
+        "zcrCV": 1.09918488534091,
+        "crestCV": 0.3223431212614028,
+        "dynamics": 0.4805595221552087,
+        "centroidCV": 1.0214351219494875,
+        "flatnessMean": 0.08900503027929314,
+        "flatnessCV": 1.2357678856822847,
+        "hfMean": 0.05966895821622712
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_2@24-03-2025_18-55-51.ogg",
+      "verdict": "HUMAN",
+      "score": 0.011685055391790666,
+      "duration": 25.133514739229025,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5285773984483838,
+        "zcrCV": 0.9145477543441116,
+        "crestCV": 0.2784462442884999,
+        "dynamics": 0.371075087266134,
+        "centroidCV": 0.8541521064928314,
+        "flatnessMean": 0.10743385672622159,
+        "flatnessCV": 0.8693141611174843,
+        "hfMean": 0.05980983130312155
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.03895018463930222
+      }
+    },
+    {
+      "file": "real/audio_30@10-11-2025_17-46-45.ogg",
+      "verdict": "HUMAN",
+      "score": 0.048425316000566404,
+      "duration": 52.09351473922902,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4920152043378388,
+        "zcrCV": 0.7427599426094746,
+        "crestCV": 0.3241693438608553,
+        "dynamics": 0.4840900913211581,
+        "centroidCV": 0.8022396770315501,
+        "flatnessMean": 0.03477946496389541,
+        "flatnessCV": 0.652236392067373,
+        "hfMean": 0.07088155827606389
+      },
+      "scores": {
+        "lowFlatness": 0.006301001031559728,
+        "stableFlatness": 0.06823372561803842,
+        "energyFlat": 0.1054269012039295
+      }
+    },
+    {
+      "file": "real/audio_31@10-11-2025_17-46-45.ogg",
+      "verdict": "HUMAN",
+      "score": 0.058073306637918674,
+      "duration": 158.69351473922902,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.44353227116381577,
+        "zcrCV": 0.69636270755314,
+        "crestCV": 0.2480421134895803,
+        "dynamics": 0.45209916438404396,
+        "centroidCV": 0.7780440466410491,
+        "flatnessMean": 0.08772474047053452,
+        "flatnessCV": 0.8896577780621092,
+        "hfMean": 0.02883418436037561
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.19357768879306225
+      }
+    },
+    {
+      "file": "real/audio_32@16-11-2025_16-01-18.ogg",
+      "verdict": "HUMAN",
+      "score": 0.03746317114440008,
+      "duration": 5.66,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5252554496369308,
+        "zcrCV": 0.4168010126138044,
+        "crestCV": 0.5850118867199738,
+        "dynamics": 0.4354666968437288,
+        "centroidCV": 0.6255193301743951,
+        "flatnessMean": 0.13071559499392726,
+        "flatnessCV": 0.6161184971422773,
+        "hfMean": 0.12221286189464206
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.11983071836817527,
+        "energyFlat": 0.04499009156921674
+      }
+    },
+    {
+      "file": "real/audio_33@16-11-2025_16-03-19.ogg",
+      "verdict": "HUMAN",
+      "score": 0.08066646304689487,
+      "duration": 48.933514739229025,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4021114844140261,
+        "zcrCV": 0.6666201562895417,
+        "crestCV": 0.2549406447134,
+        "dynamics": 0.42510698110575834,
+        "centroidCV": 0.5875740587357751,
+        "flatnessMean": 0.08181744222481695,
+        "flatnessCV": 0.7116579925364479,
+        "hfMean": 0.02060479045157543
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.26888821015631625
+      }
+    },
+    {
+      "file": "real/audio_34@23-11-2025_20-46-21.ogg",
+      "verdict": "HUMAN",
+      "score": 0.03393031723884302,
+      "duration": 75.71351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4877944183954545,
+        "zcrCV": 0.6952875242070176,
+        "crestCV": 0.2671901194442033,
+        "dynamics": 0.4776273597440764,
+        "centroidCV": 0.8709451439275572,
+        "flatnessMean": 0.08081580464568862,
+        "flatnessCV": 0.9114360679888932,
+        "hfMean": 0.035755713031686336
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.11310105746281007
+      }
+    },
+    {
+      "file": "real/audio_35@23-11-2025_20-50-31.ogg",
+      "verdict": "HUMAN",
+      "score": 0.13667796660186693,
+      "duration": 93.29351473922902,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.29942372789657734,
+        "zcrCV": 0.8551771238958742,
+        "crestCV": 0.21014587822028225,
+        "dynamics": 0.33165079339092113,
+        "centroidCV": 0.6416757543784072,
+        "flatnessMean": 0.05689358678570702,
+        "flatnessCV": 0.7397720448935771,
+        "hfMean": 0.007736327847077277
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.4555932220062231
+      }
+    },
+    {
+      "file": "real/audio_36@23-11-2025_20-58-17.ogg",
+      "verdict": "HUMAN",
+      "score": 0.08538148923320547,
+      "duration": 30.653514739229024,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.3934672697391233,
+        "zcrCV": 0.7866673270622422,
+        "crestCV": 0.24046470133516146,
+        "dynamics": 0.466188035654236,
+        "centroidCV": 0.8071557652195552,
+        "flatnessMean": 0.0770688010785856,
+        "flatnessCV": 0.807036115077073,
+        "hfMean": 0.025354715532310335
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.2846049641106849
+      }
+    },
+    {
+      "file": "real/audio_37@24-11-2025_11-26-58.ogg",
+      "verdict": "HUMAN",
+      "score": 0.04604537900211305,
+      "duration": 6.513514739229025,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4655834718294594,
+        "zcrCV": 0.49032900501744436,
+        "crestCV": 0.3370708136548618,
+        "dynamics": 0.4422450665517843,
+        "centroidCV": 0.6076456778488595,
+        "flatnessMean": 0.09644495788449378,
+        "flatnessCV": 0.9097980221142622,
+        "hfMean": 0.02144057623472281
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.15348459667371017
+      }
+    },
+    {
+      "file": "real/audio_38@24-11-2025_11-32-09.ogg",
+      "verdict": "HUMAN",
+      "score": 0.06289849755149829,
+      "duration": 159.51351473922904,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.43468608782225315,
+        "zcrCV": 0.6454138041859665,
+        "crestCV": 0.24956572072916375,
+        "dynamics": 0.4580707091884158,
+        "centroidCV": 0.8050367237758371,
+        "flatnessMean": 0.08554793611100592,
+        "flatnessCV": 0.9441693788436812,
+        "hfMean": 0.04385390238535446
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.2096616585049943
+      }
+    },
+    {
+      "file": "real/audio_39@25-11-2025_17-03-10.ogg",
+      "verdict": "HUMAN",
+      "score": 0.061058989261826575,
+      "duration": 298.673514739229,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4380585196866513,
+        "zcrCV": 0.6622997821970843,
+        "crestCV": 0.243675115531432,
+        "dynamics": 0.4384485031317977,
+        "centroidCV": 0.6801020403712515,
+        "flatnessMean": 0.06577413932046543,
+        "flatnessCV": 0.8983883684488909,
+        "hfMean": 0.01700402172464174
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.2035299642060886
+      }
+    },
+    {
+      "file": "real/audio_3@24-03-2025_18-57-30.ogg",
+      "verdict": "HUMAN",
+      "score": 0.04890953137978508,
+      "duration": 26.353514739229023,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4603325258037274,
+        "zcrCV": 0.7106066359868461,
+        "crestCV": 0.30165523065715544,
+        "dynamics": 0.40747707257958365,
+        "centroidCV": 0.8565628078240153,
+        "flatnessMean": 0.10008020587350089,
+        "flatnessCV": 0.8590389731433672,
+        "hfMean": 0.057533726271509884
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.16303177126595025
+      }
+    },
+    {
+      "file": "real/audio_40@25-11-2025_17-10-28.ogg",
+      "verdict": "HUMAN",
+      "score": 0.08174553498188022,
+      "duration": 54.013514739229024,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.40788917525471424,
+        "zcrCV": 0.750529427207503,
+        "crestCV": 0.23655365443307189,
+        "dynamics": 0.44495229008798076,
+        "centroidCV": 0.44395149246735394,
+        "flatnessMean": 0.043527267995163904,
+        "flatnessCV": 0.6851931111680557,
+        "hfMean": 0.001968336153692597
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.021152698331348918,
+        "energyFlat": 0.2583833177187015
+      }
+    },
+    {
+      "file": "real/audio_41@25-11-2025_17-14-29.ogg",
+      "verdict": "HUMAN",
+      "score": 0.06816435705277142,
+      "duration": 41.59351473922902,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4250320120699191,
+        "zcrCV": 0.6240740406933892,
+        "crestCV": 0.25889215129489945,
+        "dynamics": 0.3973611949664082,
+        "centroidCV": 0.46544869267075617,
+        "flatnessMean": 0.05158858142041337,
+        "flatnessCV": 0.708349332425554,
+        "hfMean": 0.0047849204159457715
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.2272145235092381
+      }
+    },
+    {
+      "file": "real/audio_42@01-12-2025_19-07-02.ogg",
+      "verdict": "HUMAN",
+      "score": 0.08128856237396472,
+      "duration": 27.953514739229025,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4009709689810647,
+        "zcrCV": 1.1814334840385095,
+        "crestCV": 0.25809970653921027,
+        "dynamics": 0.4871753358503935,
+        "centroidCV": 1.171864547342725,
+        "flatnessMean": 0.0729947769566632,
+        "flatnessCV": 1.318889558399233,
+        "hfMean": 0.0579034185787719
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.2709618745798824
+      }
+    },
+    {
+      "file": "real/audio_43@09-12-2025_19-36-44.ogg",
+      "verdict": "HUMAN",
+      "score": 0.013600368232413729,
+      "duration": 114.83351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5250659915739082,
+        "zcrCV": 0.6874613222687647,
+        "crestCV": 0.2729677941313872,
+        "dynamics": 0.4735733082923108,
+        "centroidCV": 0.848032878414148,
+        "flatnessMean": 0.0936103762721379,
+        "flatnessCV": 0.8660414837833234,
+        "hfMean": 0.0402578400902778
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.04533456077471243
+      }
+    },
+    {
+      "file": "real/audio_44@17-12-2025_16-51-31.ogg",
+      "verdict": "HUMAN",
+      "score": 0.05910286766150251,
+      "duration": 256.32,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4416447426205788,
+        "zcrCV": 0.7416325004607166,
+        "crestCV": 0.27551136855296643,
+        "dynamics": 0.48013086427479645,
+        "centroidCV": 0.7664277551504903,
+        "flatnessMean": 0.0827267877087082,
+        "flatnessCV": 0.9003661155909625,
+        "hfMean": 0.020648123259241577
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.19700955887167504
+      }
+    },
+    {
+      "file": "real/audio_45@17-12-2025_17-07-04.ogg",
+      "verdict": "HUMAN",
+      "score": 0.18801658054420264,
+      "duration": 39.95351473922903,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.2721509454465888,
+        "zcrCV": 0.6872208343480374,
+        "crestCV": 0.2417941320836655,
+        "dynamics": 0.48273530954646776,
+        "centroidCV": 0.7087204029890911,
+        "flatnessMean": 0.03244762144485425,
+        "flatnessCV": 1.095333990630667,
+        "hfMean": 0.0028925186292925896
+      },
+      "scores": {
+        "lowFlatness": 0.07292510157559307,
+        "stableFlatness": 0,
+        "energyFlat": 0.5051800991880204
+      }
+    },
+    {
+      "file": "real/audio_46@19-01-2026_22-26-53.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 81.87351473922902,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.6336291239216253,
+        "zcrCV": 0.8210251889226082,
+        "crestCV": 0.5861770341394361,
+        "dynamics": 0.619301966217663,
+        "centroidCV": 1.177449926031278,
+        "flatnessMean": 0.07887444332335534,
+        "flatnessCV": 1.270077389889291,
+        "hfMean": 0.06755488284666006
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_47@27-01-2026_16-23-33.ogg",
+      "verdict": "HUMAN",
+      "score": 0.003316938137153414,
+      "duration": 53.99351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.650716514773728,
+        "zcrCV": 0.7589893808897,
+        "crestCV": 0.30197999887923693,
+        "dynamics": 0.48088345104321384,
+        "centroidCV": 0.8323966777703096,
+        "flatnessMean": 0.038379371689675555,
+        "flatnessCV": 0.688390716519963,
+        "hfMean": 0.02887029539493626
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.016584690685767067,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_48@27-02-2026_18-10-20.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 13.993514739229026,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5507116248210828,
+        "zcrCV": 0.789505428301898,
+        "crestCV": 0.34179805373939737,
+        "dynamics": 0.5315647744971947,
+        "centroidCV": 0.8625990863520753,
+        "flatnessMean": 0.14689229377439397,
+        "flatnessCV": 0.8106327420320366,
+        "hfMean": 0.13070201541083457
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_49@01-03-2026_22-04-28.ogg",
+      "verdict": "HUMAN",
+      "score": 0.01618776315503423,
+      "duration": 232.99351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5203224342157706,
+        "zcrCV": 0.8703163372453808,
+        "crestCV": 0.2853599003851319,
+        "dynamics": 0.4355774612728451,
+        "centroidCV": 0.946239324731171,
+        "flatnessMean": 0.08507623559485643,
+        "flatnessCV": 0.9904069600429632,
+        "hfMean": 0.023334497015959358
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.053959210516780765
+      }
+    },
+    {
+      "file": "real/audio_4@24-03-2025_19-00-05.ogg",
+      "verdict": "HUMAN",
+      "score": 0.07225922319116944,
+      "duration": 65.95351473922902,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.41752475748285606,
+        "zcrCV": 0.9293519730274157,
+        "crestCV": 0.25437396900166837,
+        "dynamics": 0.38934814504745235,
+        "centroidCV": 0.7597439911470617,
+        "flatnessMean": 0.06934587601615175,
+        "flatnessCV": 0.8112409530085567,
+        "hfMean": 0.014460704212741737
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.24086407730389814
+      }
+    },
+    {
+      "file": "real/audio_50@01-03-2026_22-17-40.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 141.99351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5948270686115434,
+        "zcrCV": 0.8280600773478531,
+        "crestCV": 0.2776514436447406,
+        "dynamics": 0.4424059872818132,
+        "centroidCV": 0.8990554924907872,
+        "flatnessMean": 0.07655152487948738,
+        "flatnessCV": 0.9697591695089598,
+        "hfMean": 0.019188430958918458
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_51@05-03-2026_13-14-52.ogg",
+      "verdict": "HUMAN",
+      "score": 0.09356273433938292,
+      "duration": 111.99351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.3856069671235566,
+        "zcrCV": 0.694907468775695,
+        "crestCV": 0.2550853625622907,
+        "dynamics": 0.42593963436753873,
+        "centroidCV": 0.4676284901067991,
+        "flatnessMean": 0.06572630632890565,
+        "flatnessCV": 0.6863716743944609,
+        "hfMean": 0.0032495554288763454
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.019469036579341514,
+        "energyFlat": 0.2988964234117154
+      }
+    },
+    {
+      "file": "real/audio_52@05-03-2026_13-27-21.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 157.99351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5698379047435788,
+        "zcrCV": 0.7211798890151433,
+        "crestCV": 0.3049435105825019,
+        "dynamics": 0.5188389590860407,
+        "centroidCV": 0.8520691799815815,
+        "flatnessMean": 0.10329289015458329,
+        "flatnessCV": 0.9835488266335373,
+        "hfMean": 0.04442784479758364
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_53@06-03-2026_12-19-51.ogg",
+      "verdict": "HUMAN",
+      "score": 0.18947288889506442,
+      "duration": 69.11351473922902,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.20263303702571525,
+        "zcrCV": 1.2672538006755352,
+        "crestCV": 0.19427164522523716,
+        "dynamics": 0.31358929948209735,
+        "centroidCV": 0.8343959338435012,
+        "flatnessMean": 0.05563503067874201,
+        "flatnessCV": 0.8104094770580715,
+        "hfMean": 0.00651717171177621
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.6315762963168814
+      }
+    },
+    {
+      "file": "real/audio_54@06-03-2026_12-25-34.ogg",
+      "verdict": "HUMAN",
+      "score": 0.2643054180327053,
+      "duration": 36.073514739229026,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.06996122026780323,
+        "zcrCV": 0.41462111958145664,
+        "crestCV": 0.0640238004116781,
+        "dynamics": 0.1988345732742111,
+        "centroidCV": 0.4482905770975416,
+        "flatnessMean": 0.035089561012866095,
+        "flatnessCV": 0.6913687072833615,
+        "hfMean": 0.000276104237176168
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.012330418166626278,
+        "energyFlat": 0.8727977813312668
+      }
+    },
+    {
+      "file": "real/audio_55@19-03-2026_16-28-01.ogg",
+      "verdict": "HUMAN",
+      "score": 0.01376485836715996,
+      "duration": 177.83351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5247644263268735,
+        "zcrCV": 0.7920224915552052,
+        "crestCV": 0.3733239126367437,
+        "dynamics": 0.5417222878039818,
+        "centroidCV": 0.9461015302291977,
+        "flatnessMean": 0.08885308770536497,
+        "flatnessCV": 1.1499191019811115,
+        "hfMean": 0.04192395993179952
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.04588286122386653
+      }
+    },
+    {
+      "file": "real/audio_56@19-03-2026_19-23-01.ogg",
+      "verdict": "HUMAN",
+      "score": 0.016471244633281156,
+      "duration": 90.17351473922902,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5198027181723179,
+        "zcrCV": 0.773943452739523,
+        "crestCV": 0.3310930447778949,
+        "dynamics": 0.49096934930356434,
+        "centroidCV": 1.0810886552832497,
+        "flatnessMean": 0.08685557305925878,
+        "flatnessCV": 1.1078797201613133,
+        "hfMean": 0.041776010647287413
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.054904148777603856
+      }
+    },
+    {
+      "file": "real/audio_57@19-03-2026_21-57-01.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 40.07501133786848,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.6187703065053236,
+        "zcrCV": 1.6745868059132343,
+        "crestCV": 0.41225644773866893,
+        "dynamics": 0.5737805950513063,
+        "centroidCV": 1.2843155938685273,
+        "flatnessMean": 0.08705098249787387,
+        "flatnessCV": 1.1072865355137573,
+        "hfMean": 0.05079438503072492
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_58@19-03-2026_22-11-01.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 26.573514739229026,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.6575231421261672,
+        "zcrCV": 0.8134675043504913,
+        "crestCV": 0.4643457305480369,
+        "dynamics": 0.554406204774642,
+        "centroidCV": 0.9608047305931641,
+        "flatnessMean": 0.09341575690948803,
+        "flatnessCV": 0.9868956878779098,
+        "hfMean": 0.03083560650525112
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_59@21-03-2026_20-24-01.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 436.433514739229,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5884488694900257,
+        "zcrCV": 0.9064544907462582,
+        "crestCV": 0.47120270088962035,
+        "dynamics": 0.5278955417848803,
+        "centroidCV": 1.1734795729698657,
+        "flatnessMean": 0.0815556789960496,
+        "flatnessCV": 1.2564700503833177,
+        "hfMean": 0.06876700760805032
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_5@16-07-2025_12-16-21.ogg",
+      "verdict": "HUMAN",
+      "score": 0.18680219524122502,
+      "duration": 91.73351473922902,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.20752930872442082,
+        "zcrCV": 0.7778832368221422,
+        "crestCV": 0.213076702361173,
+        "dynamics": 0.3474942059755783,
+        "centroidCV": 0.6882269703068575,
+        "flatnessMean": 0.05055214464450043,
+        "flatnessCV": 0.9476118253177551,
+        "hfMean": 0.005594062561680364
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.6226739841374167
+      }
+    },
+    {
+      "file": "real/audio_60@22-03-2026_20-28-38.ogg",
+      "verdict": "HUMAN",
+      "score": 0.00023379453321847876,
+      "duration": 687.6535147392291,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5495713766890995,
+        "zcrCV": 0.7843994478835248,
+        "crestCV": 0.3770379787546854,
+        "dynamics": 0.5443732881046518,
+        "centroidCV": 1.1489861547081504,
+        "flatnessMean": 0.07475243057542237,
+        "flatnessCV": 1.193846749565408,
+        "hfMean": 0.0634096921496759
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.0007793151107282625
+      }
+    },
+    {
+      "file": "real/audio_61@23-03-2026_12-34-01.ogg",
+      "verdict": "HUMAN",
+      "score": 0.04075740166715586,
+      "duration": 134.633514739229,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4752780969435476,
+        "zcrCV": 0.7833658168673546,
+        "crestCV": 0.3473592054386232,
+        "dynamics": 0.5381046583073864,
+        "centroidCV": 1.122173442747235,
+        "flatnessMean": 0.07257544592359444,
+        "flatnessCV": 1.332639027162707,
+        "hfMean": 0.05388760573910297
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.1358580055571862
+      }
+    },
+    {
+      "file": "real/audio_62@23-03-2026_12-35-09.ogg",
+      "verdict": "HUMAN",
+      "score": 0.047022258678163585,
+      "duration": 14.593514739229025,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.46379252575670016,
+        "zcrCV": 0.9670354416376934,
+        "crestCV": 0.44350418147584525,
+        "dynamics": 0.6229009701310346,
+        "centroidCV": 0.9662234118796295,
+        "flatnessMean": 0.11121384553023096,
+        "flatnessCV": 1.072273613403233,
+        "hfMean": 0.11151544244543313
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.1567408622605453
+      }
+    },
+    {
+      "file": "real/audio_63@23-03-2026_18-16-01.ogg",
+      "verdict": "HUMAN",
+      "score": 0.0018863535572007483,
+      "duration": 79.15351473922902,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.546541685145132,
+        "zcrCV": 0.7654139478774031,
+        "crestCV": 0.3999762190379559,
+        "dynamics": 0.5953255120419209,
+        "centroidCV": 0.9608229873555953,
+        "flatnessMean": 0.12027203118109953,
+        "flatnessCV": 1.0933941411263717,
+        "hfMean": 0.08154191048234084
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.006287845190669161
+      }
+    },
+    {
+      "file": "real/audio_64@26-03-2026_15-56-37.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 45.31351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.5993028273548177,
+        "zcrCV": 0.7276037465803368,
+        "crestCV": 0.2855599869142673,
+        "dynamics": 0.5411983465576737,
+        "centroidCV": 1.1727631497794515,
+        "flatnessMean": 0.061619935272841424,
+        "flatnessCV": 1.3324536312699742,
+        "hfMean": 0.03301234635024877
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_65@30-03-2026_16-03-23.ogg",
+      "verdict": "HUMAN",
+      "score": 0.25514239404500294,
+      "duration": 68.68,
+      "details": "low spectral flatness",
+      "features": {
+        "energyCV": 0.6002807661156175,
+        "zcrCV": 0.7783652317076221,
+        "crestCV": 0.3050241087560214,
+        "dynamics": 0.5456211452145107,
+        "centroidCV": 0.9228594313374555,
+        "flatnessMean": 0.017140032416849797,
+        "flatnessCV": 0.7222413390025956,
+        "hfMean": 0.04216798453307454
+      },
+      "scores": {
+        "lowFlatness": 0.5102847880900059,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_66@01-04-2026_22-43-01.ogg",
+      "verdict": "HUMAN",
+      "score": 0.11069616576526152,
+      "duration": 32.03351473922903,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.3470570294303539,
+        "zcrCV": 0.722276567287869,
+        "crestCV": 0.24120432249026127,
+        "dynamics": 0.5054477802798248,
+        "centroidCV": 0.6810420177736594,
+        "flatnessMean": 0.060320921651268254,
+        "flatnessCV": 1.038313063565668,
+        "hfMean": 0.0062960814383452085
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.3689872192175384
+      }
+    },
+    {
+      "file": "real/audio_67@01-04-2026_22-46-01.ogg",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 24.193514739229023,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.7143409263412656,
+        "zcrCV": 0.9437773700746084,
+        "crestCV": 0.3740437719525132,
+        "dynamics": 0.5949153289499063,
+        "centroidCV": 1.1098449012786349,
+        "flatnessMean": 0.09504504032137301,
+        "flatnessCV": 1.127695178301497,
+        "hfMean": 0.06938990536926071
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/audio_68@04-04-2026_21-05-01.ogg",
+      "verdict": "HUMAN",
+      "score": 0.054023927494925295,
+      "duration": 16.633514739229025,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4509561329259703,
+        "zcrCV": 0.6557298498062042,
+        "crestCV": 0.33495695817529564,
+        "dynamics": 0.4682131981617635,
+        "centroidCV": 0.8333832209757617,
+        "flatnessMean": 0.045366226662870594,
+        "flatnessCV": 1.2645577626043145,
+        "hfMean": 0.002845824261011548
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.18007975831641765
+      }
+    },
+    {
+      "file": "real/audio_69@06-04-2026_12-19-02.ogg",
+      "verdict": "HUMAN",
+      "score": 0.07532700260561803,
+      "duration": 131.03351473922902,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4119004952230336,
+        "zcrCV": 0.7556299420684517,
+        "crestCV": 0.33483040993735813,
+        "dynamics": 0.5231662173617496,
+        "centroidCV": 0.9485870444150365,
+        "flatnessMean": 0.03967118796769944,
+        "flatnessCV": 1.335194482002395,
+        "hfMean": 0.01258666088973905
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.25109000868539344
+      }
+    },
+    {
+      "file": "real/audio_6@17-07-2025_14-52-51.ogg",
+      "verdict": "HUMAN",
+      "score": 0.20366676399436706,
+      "duration": 30.633514739229025,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.23627924490235439,
+        "zcrCV": 0.4627162391232635,
+        "crestCV": 0.2179124187316045,
+        "dynamics": 0.3389275563910671,
+        "centroidCV": 0.5904422884450143,
+        "flatnessMean": 0.09517204852148396,
+        "flatnessCV": 0.586087767569766,
+        "hfMean": 0.003649838802213369
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.1627317606146199,
+        "energyFlat": 0.5704013729048103
+      }
+    },
+    {
+      "file": "real/audio_7@21-07-2025_19-03-28.ogg",
+      "verdict": "HUMAN",
+      "score": 0.2712748383454522,
+      "duration": 53.77351473922902,
+      "details": "flat energy",
+      "features": {
+        "energyCV": 0.12940946486064883,
+        "zcrCV": 0.556673026679041,
+        "crestCV": 0.1383423382192579,
+        "dynamics": 0.27109614089233086,
+        "centroidCV": 0.38772379205721563,
+        "flatnessMean": 0.060594098378484555,
+        "flatnessCV": 0.5534836328751332,
+        "hfMean": 0.0027787697326182607
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0.20930909589266677,
+        "energyFlat": 0.7647100638897294
+      }
+    },
+    {
+      "file": "real/audio_8@30-07-2025_09-52-44.ogg",
+      "verdict": "HUMAN",
+      "score": 0.042961771499872826,
+      "duration": 62.393514739229026,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4712367522502332,
+        "zcrCV": 0.8124554529505864,
+        "crestCV": 0.31605022554800544,
+        "dynamics": 0.5200095862211811,
+        "centroidCV": 0.9760567593676975,
+        "flatnessMean": 0.0772501331223574,
+        "flatnessCV": 1.1946673765452416,
+        "hfMean": 0.041482422583413274
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.14320590499957608
+      }
+    },
+    {
+      "file": "real/audio_9@30-07-2025_09-54-50.ogg",
+      "verdict": "HUMAN",
+      "score": 0.054311236769501656,
+      "duration": 31.153514739229024,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.4504293992559137,
+        "zcrCV": 0.6783141826617819,
+        "crestCV": 0.24695343915788384,
+        "dynamics": 0.5410216361048915,
+        "centroidCV": 0.8922024365267437,
+        "flatnessMean": 0.07573321054232436,
+        "flatnessCV": 1.1667613465800077,
+        "hfMean": 0.022768753030671968
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.18103745589833886
+      }
+    },
+    {
+      "file": "real/doc_2026-02-04_22-16-57 (1).mp3",
+      "verdict": "AI",
+      "score": 0.3518452289205921,
+      "duration": 50.56,
+      "details": "low spectral flatness, flat energy",
+      "features": {
+        "energyCV": 0.30269188690154,
+        "zcrCV": 0.6162000880166671,
+        "crestCV": 0.32082639124309115,
+        "dynamics": 0.40486273805790085,
+        "centroidCV": 0.928701788281828,
+        "flatnessMean": 0.019813507384772482,
+        "flatnessCV": 0.7378244307728177,
+        "hfMean": 0.093823946218739
+      },
+      "scores": {
+        "lowFlatness": 0.4338997890065006,
+        "stableFlatness": 0,
+        "energyFlat": 0.44965111472447283
+      }
+    },
+    {
+      "file": "real/output_h264.mp3",
+      "verdict": "HUMAN",
+      "score": 0,
+      "duration": 251.90401360544217,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 1.022921120391182,
+        "zcrCV": 0.8097991361590141,
+        "crestCV": 0.4173512365174704,
+        "dynamics": 0.3944512660531354,
+        "centroidCV": 0.8444276682731126,
+        "flatnessMean": 0.04603461089369517,
+        "flatnessCV": 0.8582915834567778,
+        "hfMean": 0.021765876475222004
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0
+      }
+    },
+    {
+      "file": "real/video.wav",
+      "verdict": "HUMAN",
+      "score": 0.2607428691880145,
+      "duration": 37.207145833333335,
+      "details": "low spectral flatness",
+      "features": {
+        "energyCV": 0.5130310908169649,
+        "zcrCV": 0.7033231192656636,
+        "crestCV": 0.31428394566650064,
+        "dynamics": 0.4498448009348342,
+        "centroidCV": 0.7668910364092711,
+        "flatnessMean": 0.018974673794211624,
+        "flatnessCV": 0.6592432765717081,
+        "hfMean": 0.09396258425772328
+      },
+      "scores": {
+        "lowFlatness": 0.4578664630225251,
+        "stableFlatness": 0.05822389061184552,
+        "energyFlat": 0.06721619851460947
+      }
+    },
+    {
+      "file": "real/Запись_звонка_Порошенко_KLICKAUD.mp3",
+      "verdict": "HUMAN",
+      "score": 0.11440839591331527,
+      "duration": 26.14857142857143,
+      "details": "Authentic speech patterns",
+      "features": {
+        "energyCV": 0.34025127415892203,
+        "zcrCV": 0.7727217451650246,
+        "crestCV": 0.25658944622130514,
+        "dynamics": 0.5086686943535689,
+        "centroidCV": 0.8139354808018893,
+        "flatnessMean": 0.03689346732627899,
+        "flatnessCV": 0.8426339884286492,
+        "hfMean": 0.023241503406367686
+      },
+      "scores": {
+        "lowFlatness": 0,
+        "stableFlatness": 0,
+        "energyFlat": 0.3813613197110509
+      }
+    }
+  ]
+}
