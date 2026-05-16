@@ -1,5 +1,5 @@
 body {
-    background-color: #1a2233; /* Темний фон */
+    background-color: #1a2233;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,6 @@ h1 {
     background-color: #7d6de6;
 }
 
-/* Кнопка AI Detect */
 .btn-ai {
     background-color: #ff7e7e;
     color: #ffffff;
@@ -110,7 +109,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.upload-icon p{
+p{
     color: white;
 }
 
