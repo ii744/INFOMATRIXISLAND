@@ -47,7 +47,6 @@ h1 {
     font-weight: 500;
 }
 
-/* Кнопка Encrypt */
 .btn-encrypt {
     background-color: #9a8cff;
     color: #ffffff;
@@ -80,7 +79,7 @@ h1 {
     transform: translateY(1px);
     background-color: #e66b6b;
 }
-/* Стилі для зони завантаження */
+
 .upload-box {
     border: 1px solid #4a5568;
     border-radius: 8px;
@@ -111,13 +110,16 @@ h1 {
     margin-bottom: 10px;
 }
 
+.upload-icon p{
+    color: white;
+}
+
 .instruction {
     color: #f08a8a;
     font-size: 14px;
     font-family: monospace;
 }
 
-/* Кнопки Main */
 .btn-main {
     background-color: #9a8cff;
     color: white;
