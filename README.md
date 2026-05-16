@@ -2,6 +2,9 @@
 > **Your voice is your biometrics. Protect it.**
 
 <p align="center">
+  <a href="https://infomatrixisland.vercel.app/">
+    <img alt="Try Online" src="https://img.shields.io/badge/Try_Online-Live_Demo-0078D4?style=for-the-badge&logo=vercel&logoColor=white">
+  </a>
   <a href="https://www.figma.com/design/bkIxLkjMcPS53dXsoPlvqd/AuraCast?node-id=0-1&p=f&t=xSfVlGnW3k9hS2EB-0">
     <img alt="Figma Design" src="https://img.shields.io/badge/Figma-Design-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
   </a>
