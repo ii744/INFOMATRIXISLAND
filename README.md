@@ -1,4 +1,4 @@
-# AuraCast 🛡️🎙️
+# AuraCast 🎙️
 > **Your voice is your biometrics. Protect it.**
 
 <p align="center">
