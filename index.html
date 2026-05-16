@@ -19,10 +19,10 @@
 
     <div id="encrypt-screen" class="card" style="display: none;">
         <h1>AuraCast</h1>
-        <p class="instruction">Download a file you want to encrypt</p>
+        <p class="instruction">Upload a file you want to encrypt</p>
         <div class="upload-box" onclick="document.getElementById('encrypt-chooser').click()">
             <div class="upload-icon">↑</div>
-            <p>Download</p>
+            <p>Upload</p>
             <input type="file" id="encrypt-chooser" accept="audio/*" style="display: none;" onchange="handleEncrypt(this)">
         </div>
         <button class="btn btn-main-alt" onclick="showScreen('main-screen')">Main</button>
@@ -31,11 +31,11 @@
 
 <div id="detect-screen" class="card" style="display: none;">
     <h1>AuraCast</h1>
-    <p class="instruction">Download a file you want to detect</p>
+    <p class="instruction">Upload a file you want to detect</p>
 
     <div class="upload-box" onclick="triggerFileChoose()">
         <div class="upload-icon">↑</div>
-        <p>Download</p>
+        <p>Upload</p>
 
       <input type="file" id="file-chooser" accept="audio/*" style="display: none;" onchange="handleDetect(this)">
     </div>
