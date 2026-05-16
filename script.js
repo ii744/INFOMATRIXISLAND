@@ -271,7 +271,7 @@ async function simulateAIListening() {
     biquadFilter.connect(distortion);
     distortion.connect(audioCtx.destination);
 
-    alert("SIMULATION START: Now you you will hear how your voice sounds to AI.");
+    alert("SIMULATION START: Now you will hear how your voice sounds to AI.");
     source.start(0);
 }
 
