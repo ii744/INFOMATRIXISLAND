@@ -2,7 +2,7 @@
 > **Your voice is your biometrics. Protect it.**
 
 <p align="center">
-  <a href="https://www.figma.com/design/dnOt3b30jmYJxvZJQVp1ci/%D0%9E%D0%B1%D1%80%D1%96%D0%B9?node-id=0-1&p=f&t=SrB7E5vYg7XI2haQ-0">
+  <a href="https://www.figma.com/design/bkIxLkjMcPS53dXsoPlvqd/AuraCast?node-id=0-1&p=f&t=xSfVlGnW3k9hS2EB-0">
     <img alt="Figma Design" src="https://img.shields.io/badge/Figma-Design-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
   </a>
 </p>
