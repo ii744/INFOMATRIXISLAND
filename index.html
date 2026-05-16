@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AuraCast — AI voice detection and audio encryption tool. Protect your voice biometrics.">
     <title>AuraCast</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="icon1.png">
@@ -28,55 +29,70 @@
         <button class="btn btn-main-alt" onclick="showScreen('main-screen')">Main</button>
     </div>
 
-
-<div id="detect-screen" class="card" style="display: none;">
-    <h1>AuraCast</h1>
-    <p class="instruction">Upload a file you want to detect</p>
-
-    <div class="upload-box" onclick="triggerFileChoose()">
-        <div class="upload-icon">↑</div>
-        <p>Upload</p>
-
-      <input type="file" id="file-chooser" accept="audio/*" style="display: none;" onchange="handleDetect(this)">
+    <div id="detect-screen" class="card" style="display: none;">
+        <h1>AuraCast</h1>
+        <p class="instruction">Upload a file you want to detect</p>
+        <div class="upload-box" onclick="document.getElementById('file-chooser').click()">
+            <div class="upload-icon">↑</div>
+            <p>Upload</p>
+            <input type="file" id="file-chooser" accept="audio/*" style="display: none;" onchange="handleDetect(this)">
+        </div>
+        <button class="btn btn-main" onclick="showScreen('main-screen')">Main</button>
     </div>
 
-    <button class="btn btn-main" onclick="showScreen('main-screen')">Main</button>
-</div>
-
-
-
-   <div id="result-human" class="card" style="display: none;">
-    <h1>AuraCast</h1>
-    <div class="result-content">
-        <div class="status-icon success">✓</div>
-        <p class="status-text">No need to worry! It's a human</p>
+    <div id="scanning-screen" class="card" style="display: none;">
+        <h1>AuraCast</h1>
+        <div class="scanning-status">
+            <div class="spinner"></div>
+            <p id="scanning-label">Analyzing audio...</p>
+        </div>
+        <button class="btn btn-main" onclick="showScreen('main-screen')">Cancel</button>
     </div>
-    <button class="btn btn-main" onclick="showScreen('main-screen')">Main</button>
-</div>
 
-<div id="result-ai" class="card" style="display: none;">
-    <h1>AuraCast</h1>
-    <div class="result-content">
-        <div class="status-icon error">☹</div>
-        <p class="status-text">Things gone bad... It's AI</p>
+    <div id="result-human" class="card" style="display: none;">
+        <h1>AuraCast</h1>
+        <div class="result-content">
+            <div class="status-icon success">✓</div>
+            <p class="status-text">No need to worry! It's a human</p>
+        </div>
+        <div class="confidence-bar-container">
+            <p class="confidence-label">Confidence: <span id="human-confidence-value">0%</span></p>
+            <div class="confidence-bar-track">
+                <div id="human-confidence-bar" class="confidence-bar-fill human" style="width: 0%;"></div>
+            </div>
+        </div>
+        <p id="human-details" class="details-text"></p>
+        <button class="btn btn-main" onclick="showScreen('main-screen')">Main</button>
     </div>
-    <button class="btn btn-main" onclick="showScreen('main-screen')">Main</button>
-</div>
 
-<div id="result-encrypted" class="card" style="display: none;">
+    <div id="result-ai" class="card" style="display: none;">
+        <h1>AuraCast</h1>
+        <div class="result-content">
+            <div class="status-icon error">☹</div>
+            <p class="status-text">Things gone bad... It's AI</p>
+        </div>
+        <div class="confidence-bar-container">
+            <p class="confidence-label">AI Probability: <span id="ai-confidence-value">0%</span></p>
+            <div class="confidence-bar-track">
+                <div id="ai-confidence-bar" class="confidence-bar-fill ai" style="width: 0%;"></div>
+            </div>
+        </div>
+        <p id="ai-details" class="details-text"></p>
+        <button class="btn btn-main" onclick="showScreen('main-screen')">Main</button>
+    </div>
+
+    <div id="result-encrypted" class="card" style="display: none;">
         <h1>AuraCast</h1>
         <p class="tagline">Encrypted version:</p>
-        
         <div style="margin: 30px 0;">
             <audio id="encrypted-audio-player" controls style="width: 100%; margin-bottom: 20px;"></audio>
-            
             <div class="button-container">
                 <button class="btn btn-ai" onclick="simulateAIListening()">Simulate AI Attack</button>
                 <button class="btn btn-main-alt" onclick="showScreen('main-screen')">Main</button>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
 
+    <script src="script.js"></script>
 </body>
 </html>
