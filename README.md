@@ -1,6 +1,12 @@
 # AuraCast 🛡️🎙️
 > **Your voice is your biometrics. Protect it.**
 
+<p align="center">
+  <a href="https://www.figma.com/design/dnOt3b30jmYJxvZJQVp1ci/%D0%9E%D0%B1%D1%80%D1%96%D0%B9?node-id=0-1&p=f&t=SrB7E5vYg7XI2haQ-0">
+    <img alt="Figma Design" src="https://img.shields.io/badge/Figma-Design-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+  </a>
+</p>
+
 AuraCast is a client-side web application designed to protect human voice biometrics from unauthorized AI training and voice cloning, while also providing a robust tool to detect AI-generated audio deepfakes. 
 
 Built entirely with Vanilla JavaScript and the Web Audio API, AuraCast processes all sensitive biometric data locally in the browser—ensuring zero data leakage to external servers.
