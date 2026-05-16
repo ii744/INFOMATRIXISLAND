@@ -31,6 +31,7 @@ h1 {
     color: #f08a8a;
     font-size: 16px;
     margin-bottom: 30px;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .button-container {
@@ -118,7 +119,7 @@ h1 {
 .card p.instruction {
     color: #f08a8a;
     font-size: 14px;
-    font-family: monospace;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .btn-main {
@@ -171,7 +172,7 @@ h1 {
     text-align: left;
 }
 
-
+/* Confidence bar */
 .confidence-bar-container {
     width: 100%;
     margin: 15px 0;
@@ -206,6 +207,7 @@ h1 {
     background: linear-gradient(90deg, #f87171, #fb923c);
 }
 
+/* Scanning animation */
 .scanning-status {
     display: flex;
     flex-direction: column;
@@ -217,7 +219,7 @@ h1 {
 .scanning-status p {
     color: #a0aec0;
     font-size: 14px;
-    font-family: monospace;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .spinner {
@@ -238,5 +240,5 @@ h1 {
     font-size: 13px;
     font-style: italic;
     margin-top: 5px;
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains Mono', monospace;
 }
