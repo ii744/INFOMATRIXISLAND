@@ -16,7 +16,19 @@ body {
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 30px 20px;
+    }
+    .upload-box {
+        padding: 50px 20px;
+        min-height: 150px;
+    }
 }
 
 h1 {
@@ -241,4 +253,28 @@ h1 {
     font-style: italic;
     margin-top: 5px;
     font-family: 'JetBrains Mono', monospace;
+}
+
+/* Toast Notification Styles */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #334155;
+    color: #f8fafc;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, bottom 0.3s;
+    z-index: 1000;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+    bottom: 40px;
 }
